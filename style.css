@@ -45,22 +45,11 @@ header{
 }
 .login{
     display: flex;
-    width: 200px;
-    height: 300px;
-    justify-content: center;
-    text-align: center;
     flex-direction: column;
     background-color: grey;
 }
 
-.usuario{
-    text-align: center;
-    justify-content: flex-end;
-}
-.password{
-    text-align: center;
-    justify-content: flex-end;
-}
+
 .cart{
     width: 39px;
     height: 38px;
