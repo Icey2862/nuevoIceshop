@@ -1,3 +1,15 @@
+function entrar(){
+    const usuario = document.getElementById("usuario").value;
+    const password = document.getElementById("password").value;
+    if(usuario== "EstefanoBruno" && password=="coderhouse"){
+        window.location.href="main.html"
+    } else if (usuario== "brian" && password=="admin"){
+        window.location.href="main.html"
+    } else {
+        alert("Los datos ingresados son invalidos")
+    }
+}
+
 //variables
 let allContainerCart = document.querySelector('.products');
 let containerBuyCart = document.querySelector('.card-items');
@@ -10,6 +22,8 @@ let totalCard = 0;
 let countProduct = 0;
 
 //functions
+loadEventListenrs();
+
 function showCart(x){
     document.getElementById("products-id").style.display = "block";
 }
@@ -18,7 +32,6 @@ function closeBtn(){
 }
 
 
-loadEventListenrs();
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
 
@@ -112,3 +125,4 @@ function loadHtml(){
 function clearHtml(){
     containerBuyCart.innerHTML = '';
 }
+
