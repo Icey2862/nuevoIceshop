@@ -4,7 +4,7 @@ function entrar(){
     if(usuario== "EstefanoBruno" && password=="coderhouse"){
         window.location.href="main.html"
     } else if (usuario== "brian" && password=="admin"){
-        window.location.href="main.html"
+        window.location.href="./main.html"
     } else {
         alert("Los datos ingresados son invalidos")
     }
@@ -22,21 +22,13 @@ let totalCard = 0;
 let countProduct = 0;
 
 //functions
-loadEventListenrs();
-
-function showCart(x){
-    document.getElementById("products-id").style.display = "block";
-}
-function closeBtn(){
-        document.getElementById("products-id").style.display = "none";
-}
-
 
 function loadEventListenrs(){
     allContainerCart.addEventListener('click', addProduct);
-
+    
     containerBuyCart.addEventListener('click', deleteProduct);
 }
+loadEventListenrs();
 
 function addProduct(e){
     e.preventDefault();
